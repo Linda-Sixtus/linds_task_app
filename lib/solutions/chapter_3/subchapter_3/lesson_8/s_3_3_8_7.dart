@@ -7,7 +7,14 @@ import 'package:flutter/material.dart';
 /// It returns the PIN as a string.
 String hackPin() {
   // Lösung hier einfügen
-  throw UnimplementedError();
+    // Brute-force attack to find the 4-digit PIN
+  for (int i = 0; i < 10000; i++) {
+    String pin = i.toString().padLeft(4, '0');
+    if (_isPinCorrect(pin)) {
+      return pin;
+    }
+  }
+  return 'PIN not found';
 }
 
 // ignore: unused_element
