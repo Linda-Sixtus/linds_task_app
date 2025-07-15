@@ -42,7 +42,7 @@ class _ShowHideNameWidgetState extends State<ShowHideNameWidget> {
             textStyle: const TextStyle(fontSize: 18),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
-            ),‚
+            ),
           ),
           child: Text(getButtonLabel()),
         ),
