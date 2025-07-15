@@ -10,18 +10,14 @@ bool isPrime(int input) {
   }
   return true;
 }
-
 class S3382 extends StatefulWidget {
   const S3382({super.key});
-
   @override
   State<S3382> createState() => _S3382State();
 }
-
 class _S3382State extends State<S3382> {
   final TextEditingController _inputController = TextEditingController();
   String? output;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -66,7 +62,6 @@ class _S3382State extends State<S3382> {
       ],
     );
   }
-
   @override
   void dispose() {
     _inputController.dispose();
